@@ -4,271 +4,321 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mithra's student portfolio featuring Java, skills, education, and projects.">
-  <title>Mithra | Aspiring Software Developer</title>
+
+  <title>Mithra | Personal Portfolio</title>
+  <meta name="description" content="Explore Mithra's portfolio, skills, education, and Java programming project.">
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Navigation -->
+
+  <!-- NAVIGATION -->
   <header class="navbar">
-    <a href="#home" class="logo">M<span>.</span></a>
+    <a href="#home" class="logo">Mithra<span>.</span></a>
 
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Toggle navigation" aria-expanded="false">
-      ☰
-    </button>
-
-    <nav id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <nav id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
+
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+    >☰</button>
   </header>
 
   <main>
-    <!-- Home -->
-    <section class="hero section" id="home">
-      <div class="hero-content reveal">
-        <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="slide active">
+      <div class="hero-text">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
         <h1>Hi, I'm <span>Mithra</span></h1>
-        <h2>Aspiring Software Developer</h2>
 
-        <p class="intro">
-          I enjoy coding, learning new technologies, and exploring
-          creative ideas through technology.
+        <h2>Aspiring Developer</h2>
+
+        <p>
+          I'm passionate about technology, coding, creativity,
+          and learning new things. Welcome to my personal portfolio!
         </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">
-            View My Projects
-          </a>
-          <a href="#contact" class="btn btn-outline">
+        <div class="buttons">
+          <button class="btn primary" data-go="projects">
+            View My Projects →
+          </button>
+
+          <button class="btn secondary" data-go="contact">
             Contact Me
-          </a>
+          </button>
         </div>
 
-        <div class="social-links">
-          <a href="https://github.com/mithramahalingam0678-prog"
-             target="_blank" rel="noopener noreferrer">
-            GitHub ↗
-          </a>
-        </div>
+        <a
+          class="github"
+          href="https://github.com/mithramahalingam0678-prog"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit My GitHub ↗
+        </a>
       </div>
 
-      <div class="hero-visual reveal">
-        <div class="photo-frame">
+      <div class="hero-image">
+        <div class="photo-ring">
           <img
-            src="./mithra.jpeg"
-            alt="Profile photo"
+            src="C:\Users\KGCAS\OneDrive\Pictures\whatsapp image 2026-03-09 at 5.35.32 pm.jpeg"
+            alt="Mithra's profile photo"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
           >
-          <div class="photo-placeholder" style="display:none">M</div>
+          <span class="fallback">M</span>
         </div>
 
-        <div class="floating-card">
-          <span class="code-icon">&lt;/&gt;</span>
-          <div>
-            <strong>Java Developer</strong>
-            <p>Always learning</p>
-          </div>
-        </div>
+        <div class="floating-note">✨ Always Learning</div>
       </div>
     </section>
 
-    <!-- About Me -->
-    <section class="section" id="about">
-      <div class="section-heading reveal">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="slide">
+      <div class="section-heading">
         <p class="eyebrow">GET TO KNOW ME</p>
         <h2>About <span>Me</span></h2>
+        <p>A little introduction about who I am.</p>
       </div>
 
-      <div class="about-card reveal">
-        <p>
-          I'm Mithra, a second-year B.Sc. Information Technology student
-          at KG College of Arts and Science. I enjoy coding and developing
-          my technical skills while exploring creative ideas.
-        </p>
-
-        <p>
-          My interests include programming, web development, creative
-          design, problem-solving, dance, and performing arts. I also
-          value teamwork and leadership and look forward to building
-          useful projects as I learn.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="section alternate" id="education">
-      <div class="section-heading reveal">
-        <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-        <h2>My <span>Education</span></h2>
-      </div>
-
-      <article class="education-card reveal">
-        <div class="education-icon">🎓</div>
+      <div class="content-card about-card">
+        <div class="big-icon">💙</div>
 
         <div>
-          <p class="education-status">
-            Expected Graduation: 2028
+          <h3>Hello! I'm Mithra</h3>
+
+          <p>
+            I'm a student interested in programming, technology,
+            and web development. I enjoy learning new concepts,
+            exploring creative ideas, and improving my coding skills.
           </p>
-          <h3>B.Sc. Information Technology</h3>
-          <p>KG College of Arts and Science</p>
-          <p class="muted">Currently in second year</p>
+
+          <p>
+            I'm especially interested in Java programming and
+            developing projects that help me grow as a programmer.
+          </p>
+
+          <p>
+            My goal is to keep learning, build useful projects,
+            and turn my ideas into reality.
+          </p>
         </div>
-      </article>
+      </div>
+
+      <div class="slide-controls">
+        <button class="btn secondary" data-go="home">← Home</button>
+        <button class="btn primary" data-go="education">Next →</button>
+      </div>
     </section>
 
-    <!-- Skills -->
-    <section class="section" id="skills">
-      <div class="section-heading reveal">
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="slide">
+      <div class="section-heading">
+        <p class="eyebrow">MY LEARNING JOURNEY</p>
+        <h2>My <span>Education</span></h2>
+        <p>The foundation of my journey.</p>
+      </div>
+
+      <div class="card-list">
+
+        <article class="content-card">
+          <div class="big-icon">🎓</div>
+
+          <div>
+            <p class="eyebrow">CURRENT STUDIES</p>
+            <h3>My Current Education</h3>
+
+            <p>
+              Add your current school or college name, course,
+              and year of study here.
+            </p>
+
+            <span class="tag">Currently Studying</span>
+          </div>
+        </article>
+
+        <article class="content-card">
+          <div class="big-icon">📚</div>
+
+          <div>
+            <p class="eyebrow">PREVIOUS STUDIES</p>
+            <h3>My Previous Education</h3>
+
+            <p>
+              Add your previous school and qualification details here.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="slide-controls">
+        <button class="btn secondary" data-go="about">← Back</button>
+        <button class="btn primary" data-go="skills">Next →</button>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="slide">
+      <div class="section-heading">
         <p class="eyebrow">WHAT I'M LEARNING</p>
         <h2>My <span>Skills</span></h2>
-        <p class="section-description">
-          Technologies, abilities, and interests I'm developing.
-        </p>
+        <p>Technologies and abilities I'm developing.</p>
       </div>
 
       <div class="skills-grid">
-        <article class="skill-card reveal">
-          <span class="skill-icon">☕</span>
+
+        <article class="content-card skill-card">
+          <div class="big-icon">☕</div>
           <h3>Java</h3>
-          <p>Programming and console applications</p>
+          <p>Learning object-oriented programming and Java fundamentals.</p>
         </article>
 
-        <article class="skill-card reveal">
-          <span class="skill-icon">🌐</span>
-          <h3>Web Development</h3>
-          <p>Interested in creating websites and web experiences</p>
+        <article class="content-card skill-card">
+          <div class="big-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Creating the structure of web pages.</p>
         </article>
 
-        <article class="skill-card reveal">
-          <span class="skill-icon">🎨</span>
-          <h3>Creative Design</h3>
-          <p>Exploring creative ideas and visual layouts</p>
+        <article class="content-card skill-card">
+          <div class="big-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Designing attractive and responsive websites.</p>
         </article>
 
-        <article class="skill-card reveal">
-          <span class="skill-icon">🧩</span>
-          <h3>Problem-Solving</h3>
-          <p>Learning to approach challenges logically</p>
+        <article class="content-card skill-card">
+          <div class="big-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Learning to make websites interactive.</p>
         </article>
 
-        <article class="skill-card reveal">
-          <span class="skill-icon">🤝</span>
-          <h3>Teamwork & Leadership</h3>
-          <p>Collaboration, communication, and shared goals</p>
+        <article class="content-card skill-card">
+          <div class="big-icon">💡</div>
+          <h3>Problem Solving</h3>
+          <p>Practising logical thinking and creative solutions.</p>
         </article>
 
-        <article class="skill-card reveal">
-          <span class="skill-icon">💃</span>
-          <h3>Dance & Performing Arts</h3>
-          <p>A creative interest beyond technology</p>
+        <article class="content-card skill-card">
+          <div class="big-icon">🔧</div>
+          <h3>GitHub</h3>
+          <p>Sharing and managing programming projects.</p>
         </article>
+
+      </div>
+
+      <div class="slide-controls">
+        <button class="btn secondary" data-go="education">← Back</button>
+        <button class="btn primary" data-go="projects">Next →</button>
       </div>
     </section>
 
-    <!-- Projects: only one project -->
-    <section class="section alternate" id="projects">
-      <div class="section-heading reveal">
-        <p class="eyebrow">WHAT I'VE BEEN BUILDING</p>
-        <h2>My <span>Projects</span></h2>
-        <p class="section-description">
-          Explore my Java programming project.
-        </p>
+    <!-- PROJECTS SECTION: JAVA PRO ONLY -->
+    <section id="projects" class="slide">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I'VE CREATED</p>
+        <h2>My <span>Project</span></h2>
+        <p>Explore my Java programming project.</p>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card reveal">
-          <div class="project-art">☕</div>
 
-          <div class="project-body">
-            <span class="project-tag">JAVA</span>
+        <article class="content-card project-card">
+          <div class="project-art art-one">☕</div>
 
-            <h3>Java Console Application</h3>
+          <div class="project-info">
+            <p class="eyebrow">JAVA DEVELOPMENT</p>
+
+            <h3>Java Pro</h3>
 
             <p>
-              A Java-based console project demonstrating programming
-              fundamentals and logical thinking.
+              My Java programming project hosted on GitHub.
+              Explore my code and programming work as I continue
+              learning and improving my Java skills.
             </p>
 
+            <span class="tag">Java</span>
+            <span class="tag">Programming</span>
+            <span class="tag">GitHub</span>
+
             <a
-              class="project-link"
+              class="btn primary project-button"
               href="https://github.com/mithramahalingam0678-prog/java-pro/tree/main/java%20pro"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Explore on GitHub ↗
+              View Project on GitHub ↗
             </a>
           </div>
         </article>
+
+      </div>
+
+      <div class="slide-controls">
+        <button class="btn secondary" data-go="skills">← Back</button>
+        <button class="btn primary" data-go="contact">Next →</button>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-      <div class="section-heading reveal">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="slide">
+      <div class="section-heading">
         <p class="eyebrow">LET'S CONNECT</p>
         <h2>Contact <span>Me</span></h2>
-        <p class="section-description">
-          Have a project idea or want to connect? Feel free to reach out.
+        <p>Thanks for visiting my portfolio!</p>
+      </div>
+
+      <div class="content-card contact-card">
+        <div class="big-icon">✉️</div>
+
+        <h3>Let's Connect!</h3>
+
+        <p>
+          Feel free to explore my GitHub profile and check out
+          my Java programming project.
+        </p>
+
+        <a
+          class="btn primary"
+          href="https://github.com/mithramahalingam0678-prog"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit My GitHub ↗
+        </a>
+
+        <p class="small-note">
+          You can add a professional email address here if you
+          would like to share one publicly.
         </p>
       </div>
 
-      <div class="contact-card reveal">
-        <div class="contact-item">
-          <span>✉</span>
-          <div>
-            <p class="muted">Email</p>
-            <a href="mailto:25bit124@kgcas.com">
-              25bit124@kgcas.com
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <span>⌘</span>
-          <div>
-            <p class="muted">GitHub</p>
-            <a
-              href="https://github.com/mithramahalingam0678-prog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View My GitHub Profile
-            </a>
-          </div>
-        </div>
-
-        <a href="mailto:25bit124@kgcas.com" class="btn btn-primary">
-          Email Me ↗
-        </a>
+      <div class="slide-controls">
+        <button class="btn secondary" data-go="projects">← Back</button>
+        <button class="btn primary" data-go="home">Back to Home ↗</button>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <a href="#home" class="logo">M<span>.</span></a>
-    <p>Mithra | Aspiring Software Developer</p>
-
-    <div class="footer-links">
-      <a href="https://github.com/mithramahalingam0678-prog"
-         target="_blank" rel="noopener noreferrer">GitHub</a>
-      <span>·</span>
-      <a href="mailto:25bit124@kgcas.com">Email</a>
-    </div>
-
-    <p class="copyright">
-      © <span id="year"></span> Mithra. All rights reserved.
-    </p>
+    <a href="#home" class="logo">Mithra<span>.</span></a>
+    <p>Made with 💙 by Mithra</p>
+    <p>© <span id="year"></span> Mithra. All rights reserved.</p>
   </footer>
 
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
+
 </body>
 </html>
